@@ -1,0 +1,22 @@
+@model User;
+@{
+    ViewData["Title"] = "Survey Data";
+}
+
+<div class="container border border-black border-3 rounded w-75 mx-auto h-75 p-5 m-5">
+    <h3 class="text-bold underline">Submitted Info</h3>
+    <div class="d-flex m-3 justify-content-between">
+        <p class="w-50">Name: @Model.Name</p>
+    </div>
+    <div class="d-flex m-3 justify-content-between">
+        <p class="w-50">Dojo Location: @Model.Location</p>
+    </div>
+    <div class="d-flex m-3 justify-content-between">
+        <p class="w-50">Favorite Language: @Model.Language</p>
+    </div>
+    <div class=" m-3 justify-content-between">
+        <p class="w-100">Comment: @Model.Comment</p>
+    </div>
+
+</div>
+
